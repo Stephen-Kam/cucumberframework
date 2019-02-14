@@ -18,6 +18,8 @@ public class MainSteps {
 
     @Before
     public void startUp() {
+        //Uncomment line 22 if driver is not set on your system's PATH
+//        System.setProperty("webdriver.chrome.driver", "driverlocation");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         googlePage = new GooglePage(driver);
